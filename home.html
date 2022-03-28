@@ -8,26 +8,36 @@
     />
     <title>Home- My First website</title>
     <style>
+      :root {
+        --main-color: #fcce00;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
-        height: 100vh;
-        display: flex;
-        margin: 20px;
-        justify-content: space-between;
-        align-items: center;
+        height: 1000vh;
+        margin: 50px;
       }
-      div {
-        width: 50px;
-        height: 50px;
-        background-color: teal;
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      #second {
-        background-color: wheat;
+      p::first-line {
+        color: var(--main-color);
+      }
+      a {
+        color: var(--main-color);
       }
     </style>
   </head>
   <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+      accusantium ipsam rem pariatur ducimus eos nobis optio quos iusto
+      incidunt? Quidem porro reprehenderit id optio atque ipsum adipisci
+      voluptates. Voluptate?
+    </p>
+    <div>
+      <a href="#">website</a>
+    </div>
   </body>
 </html>
